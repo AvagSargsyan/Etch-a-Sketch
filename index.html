@@ -12,7 +12,13 @@
     <div class="container">
         <h1>Etch-a-Sketch</h1>
         <div class="board"></div>
-        <button class="erase-btn">Erase</button>
+        <div class="options">
+            <form action="#">
+                <label for="scaleRange">Scale : <span class="scale-number"></span></label>
+                <input id="scale" type="range" min="2" max="64" step="2">
+            </form>
+            <button class="erase-btn">Erase</button>
+        </div>
     </div>
 </body>
 </html>
