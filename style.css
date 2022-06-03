@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(241, 240, 240);
+    background-color: rgb(244, 244, 247);
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 }
 
 .board {
-    background-color: rgb(219, 214, 214);
+    background-color: rgb(215, 217, 236);
     width: 700px;
     height: 700px;
     display: flex;

@@ -6,6 +6,7 @@ const scaleNumber = document.querySelector('.scale-number');
 const boardWidth = getComputedStyle(board).width.split('px')[0];
 const boardHeight = getComputedStyle(board).height.split('px')[0];
 let scale = scaleInput.value;
+let colorInput = document.querySelector('#color-input');
 let pixels = [];
 
 scaleNumber.textContent = scaleInput.value;
@@ -21,7 +22,7 @@ function addPixels() {
         p.classList.add('pixel');
         board.appendChild(p);
         p.addEventListener('mouseover', (e) => {
-            p.style.backgroundColor = 'red';
+            p.style.backgroundColor = colorInput.value;
         })
     });
 }
@@ -46,7 +47,6 @@ eraseBtn.addEventListener('click', (e) => {
 scaleInput.addEventListener('click', (e) => {
     scaleNumber.textContent = scaleInput.value;
     scale = +scaleInput.value;
-    console.log(scaleInput.value);
     clearBoard();
     addPixels();
 });
